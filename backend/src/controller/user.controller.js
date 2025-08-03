@@ -97,7 +97,8 @@ const loginUser = asyncHandler(async (req, res) => {
   // options help to cookies are modified only on server
   const options = {
     httpOnly: true,
-    secure: process.env.NODE_ENV === 'production'
+    secure: true,
+    sameSite: 'None'
   }
 
   return res
@@ -170,7 +171,8 @@ const refreshAccessToken = asyncHandler(async (req, res) => {
 
     const options = {
       httpOnly: true,
-      secure: process.env.NODE_ENV === 'production'
+      secure: true,
+      sameSite: 'None'
     }
 
     const { accessToken, refreshToken } = await generateAccessAndRefreshToken(
