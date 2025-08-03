@@ -4,10 +4,12 @@ import { ApiError } from '../utils/ApiError.js'
 import { ApiResponse } from '../utils/ApiResponse.js'
 
 export const createPost = asyncHandler(async (req, res) => {
-  const { content } = req.body
+  let { content } = req.body
 
-  if (!content || content.trim() === '') {
-    throw new ApiError(400, 'Post content is required')
+  if (typeof content !== 'string') {
+    content = String(content || '').trim()
+  } else {
+    content = content.trim()
   }
 
   const post = await Post.create({
