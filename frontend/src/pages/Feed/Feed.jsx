@@ -95,7 +95,7 @@ export default function Feed() {
                             </div>
 
                             {/* Post Actions */}
-                            <div className="px-4 py-2 border-t border-gray-100 dark:border-gray-700 flex space-x-4 text-gray-500 dark:text-gray-400">
+                            {/* <div className="px-4 py-2 border-t border-gray-100 dark:border-gray-700 flex space-x-4 text-gray-500 dark:text-gray-400">
                                 <button className="flex items-center text-sm hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
                                     <svg
                                         className="h-5 w-5 mr-1"
@@ -128,7 +128,7 @@ export default function Feed() {
                                     </svg>
                                     Comment
                                 </button>
-                            </div>
+                            </div> */}
                         </div>
                     ))}
                 </div>
