@@ -22,10 +22,10 @@ export const AuthProvider = ({ children }) => {
             try {
                 const res = await getCurrentUserApi(); // Cookie-based auth
                 setUser(res.data.data);
-                console.log("Fetched current user:", res.data.data);
+                //  console.log("Fetched current user:", res.data.data);
             } catch (err) {
                 setUser(null);
-                console.log("No active session");
+                //  console.log("No active session");
             } finally {
                 setLoading(false);
             }
@@ -37,7 +37,7 @@ export const AuthProvider = ({ children }) => {
     // Login function → set user in context
     const login = (userData) => {
         setUser(userData);
-        console.log("User logged in:", userData);
+        // console.log("User logged in:", userData);
     };
 
     // Logout function → clear session

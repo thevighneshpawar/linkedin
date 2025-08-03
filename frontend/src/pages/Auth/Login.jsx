@@ -11,7 +11,7 @@ import {
 export default function LoginPage() {
     const navigate = useNavigate();
     const { login, user } = useContext(AuthContext);
-    console.log(user);
+    //  console.log(user);
 
     const [formData, setFormData] = useState({ email: "", password: "" });
     const [loading, setLoading] = useState(false);

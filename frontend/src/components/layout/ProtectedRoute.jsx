@@ -4,7 +4,7 @@ import { Navigate } from "react-router-dom";
 
 export default function ProtectedRoute({ children }) {
     const { user, loading } = useContext(AuthContext);
-    console.log(user, loading);
+    //  console.log(user, loading);
 
     if (loading) {
         return <div className="text-center mt-10">Checking authentication...</div>;
