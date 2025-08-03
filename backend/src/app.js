@@ -20,10 +20,11 @@ app.use(cookieParser())
 
 // Routes import
 import userRouter from './routes/user.route.js'
+import postRouter from './routes/post.route.js'
 
 //Routes
 app.use('/api/v1/users', userRouter)
-// app.use("/api/v1/posts",quizRouter);
+app.use('/api/v1/posts', postRouter)
 
 app.get('/', (req, res) => {
   res.send('API WORKING')
