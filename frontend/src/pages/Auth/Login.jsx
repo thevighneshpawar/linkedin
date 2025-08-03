@@ -68,7 +68,7 @@ export default function LoginPage() {
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="space-y-2">
                                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                                    Email Address
+                                    Email Address(Test mail : one@one.com)
                                 </label>
                                 <div className="relative">
                                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -89,7 +89,7 @@ export default function LoginPage() {
 
                             <div className="space-y-2">
                                 <label htmlFor="password" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-                                    Password
+                                    Password (Test Pass : password)
                                 </label>
                                 <div className="relative">
                                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -119,7 +119,7 @@ export default function LoginPage() {
                                 </div>
                             </div>
 
-                            <div className="flex items-center justify-between">
+                            {/* <div className="flex items-center justify-between">
                                 <div className="flex items-center">
                                     <input
                                         id="remember-me"
@@ -136,7 +136,7 @@ export default function LoginPage() {
                                         Forgot password?
                                     </a>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <button
                                 type="submit"
